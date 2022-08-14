@@ -32,7 +32,71 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.header {
+  display: flex;
+
+}
+
+.header li a {
+  text-decoration: none !important;
+  font-size: 15px;
+}
+
+.header li {
+  list-style: none !important;
+  padding: 10px;
+}
+
+.formpart {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.formpart label {
+  width: 100%;
+}
+
+.formpart input {
+  width: 100%;
+  padding: 5px;
+  margin-top: 15px;
+}
+
+.btnSub {
+
+  background: gray;
+  color: #fff;
+  border: 0px;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 100px;
+}
+
+.itembox {
+  border: 1px solid gray;
+  width: 40%;
+  padding: 10px;
+  margin: 10px;
+
+}
+
+.dashBox {
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.daspart {
+
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+
 }

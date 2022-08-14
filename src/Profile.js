@@ -1,9 +1,10 @@
 import React from 'react'
 
-function Profile() {
+function Profile(props) {
+
   return (
     <div>
-      <h1>profile</h1>
+      <h1>Name : {props.userdata}</h1>
     </div>
   )
 }

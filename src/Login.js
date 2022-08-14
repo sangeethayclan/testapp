@@ -1,17 +1,71 @@
-import React from 'react'
-import Dashboard from './Dashboard'
+import React, { useState } from 'react'
 import Profile from './Profile'
-import { Route,Link } from 'react-router-dom'
+import Header from './header';
+
+import { useNavigate } from 'react-router-dom';
+
 function Login() {
+  const navigate = useNavigate();
+  const [name, setName] = useState("");
+  const [password, setPassword] = useState("");
+  const [number, setNumber] = useState("");
+
+
+  const sumbit = (event) => {
+    event.preventDefault();
+    console.log("user Details", "Name:", name, "password:", password, "number", number);
+    //setUserDetails(name,);
+
+  }
   return (
     <div>
-     
-    <h1>React Router Example</h1>
-    <ul role="nav">
-      <li><Link to="/dashboard">Dashboard</Link></li>
-      <li><Link to="/profile">Profile</Link></li>
-    </ul>
-     
+
+      <Header></Header>
+      <form className='formpart'>
+        <label>Enter your name:</label>
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+
+
+        <label>Enter your password:  </label>
+        <input
+          type="text"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+
+        <label>Enter your name:  </label>
+        <input
+          type="number"
+          value={number}
+          onChange={(e) => setNumber(e.target.value)}
+        />
+
+        <button onClick={sumbit} className="btnSub">Submit</button>
+
+      </form>
+
+      {/* /*  pass value to child componnet  */}
+
+      <Profile userdata={name}>
+
+      </Profile>
+
+      {/* /*  pass value to another componnet using button click */}
+
+      <div className='daspart'>
+        <button onClick={() => {
+          navigate('/dashboard', { state: { id: number } });
+
+
+        }}
+          className="btnSub">
+          go to dashboard
+        </button>
+      </div>
 
 
     </div>
