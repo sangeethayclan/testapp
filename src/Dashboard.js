@@ -13,7 +13,7 @@ function Dashboard() {
 
   //ternary operator
 
-  const data = (location.state.id != null) ? {
+  const idnumber = (location.state.id != null) ? {
 
     idvalue: location.state.id
   } :
@@ -22,32 +22,37 @@ function Dashboard() {
 
     }
 
-  console.log("ternary operator", data)
+  console.log("ternary operator", idnumber)
 
 
   useEffect(() => {
     //this is get method  example 
     if (location.state.id != null) {
-
-      axios.get("https://jsonplaceholder.typicode.com/todos/")
+      axios.get("https://jsonplaceholder.typicode.com/todos/" + location.state.id)
         .then((response) => {
           setItems(response.data);
         });
     }
+
+    // //GET TOTAL ARRAY
+
+    // if (location.state.id != null) {
+    //   axios.get("https://jsonplaceholder.typicode.com/todos/")
+    //     .then((response) => {
+    //       setItems(response.data);
+    //     });
+    // }
+
     console.log("items", items)
   }, []);
 
-
-  useEffect(() => {
-    console.log("first time enter");
-
-    //this is component componentWillUnmount  example 
-
-    return () => {
-      console.log("end dom");
-
-    }
-  }, []);
+  //life cycle
+  // useEffect(() => {
+  //   console.log("first time enter");
+  //   return () => {
+  //     console.log("end dom");
+  //   }
+  // }, []);
 
   return (
 
@@ -55,8 +60,8 @@ function Dashboard() {
 
       <li>{items.id}</li>
       <li>{items.title}</li>
-
-
+      {/* 
+GET TOTAL ARRAY DATA */}
       {/* {items.map(val => (
         <div className='itembox'>
           <li>

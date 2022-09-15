@@ -46,7 +46,9 @@ function Register() {
 
 
 
+
             </form>
+
         </div>
 
     )

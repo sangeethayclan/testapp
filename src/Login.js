@@ -8,7 +8,7 @@ function Login() {
   const navigate = useNavigate();
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
-  const [number, setNumber] = useState("");
+  const [number, setNumber] = useState(null);
 
 
   const sumbit = (event) => {
@@ -37,7 +37,7 @@ function Login() {
           onChange={(e) => setPassword(e.target.value)}
         />
 
-        <label>Enter your name:  </label>
+        <label>Enter your id:  </label>
         <input
           type="number"
           value={number}
@@ -49,13 +49,13 @@ function Login() {
       </form>
 
       {/* /*  pass value to child componnet  */}
-
+      <h1>pass value to child componnet </h1>
       <Profile userdata={name}>
 
       </Profile>
 
       {/* /*  pass value to another componnet using button click */}
-
+      <h1>pass value to another componnet using button click  </h1>
       <div className='daspart'>
         <button onClick={() => {
           navigate('/dashboard', { state: { id: number } });
