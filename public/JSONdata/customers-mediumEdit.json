@@ -1,0 +1,18 @@
+{
+    "data": [
+        {
+            "Item": "Locate/Spring Mount Weldmen Assy",
+            "Requirements": "Classis should Locate the Chassis Weldment",
+            "PotentialMode": "Classis does not locate the Chassis weldment",
+            "PotentialEffect": "Loss of Primary Function",
+            "Severity": "8",
+            "Classification": "sc",
+            "Occurrence": "4",
+            "CurrentDesignPrevention": "CAD Study and To lerance Study",
+            "CurrentDesignDetection": "Protobuild",
+            "Detection": "2",
+            "R.P.N": "64",
+            "Action": "None"
+        }
+    ]
+}

@@ -1,0 +1,112 @@
+.p-treetable .p-treetable-tbody>tr>td {
+    border: 0px !important;
+    padding: 0.5rem 1rem !important;
+}
+
+.p-treetable .p-treetable-thead>tr>th {
+
+    color: #004b8e;
+    font-size: 16px;
+}
+
+.p-treetable .p-treetable-thead>tr>th {
+    border: 0px !important;
+}
+
+.boxHead {
+
+    color: #ffffff;
+    font-size: 20px;
+    background-color: #004b8e;
+    padding: 10px;
+}
+
+.boxBorder {
+
+    border: 1px solid #e0ebff;
+}
+
+.boxPara p {
+    margin: 0px;
+    font-size: 12px;
+    color: #000105
+}
+
+.accordion-demo .accordion-custom i,
+.accordion-demo .accordion-custom span {
+    vertical-align: middle;
+}
+
+.accordion-demo .accordion-custom span {
+    margin: 0 0.5rem;
+}
+
+.accordion-demo .p-accordion p {
+    line-height: 1.5;
+    margin: 0;
+}
+
+.p-accordion .p-accordion-header .p-accordion-header-link {
+    color: #ffffff;
+    font-size: 20px;
+    background-color: #004b8e;
+    padding: 10px;
+    border-radius: 0px;
+}
+
+.p-accordion .p-accordion-header:not(.p-disabled).p-highlight .p-accordion-header-link {
+    color: #ffffff;
+    font-size: 20px;
+    background-color: #004b8e;
+    padding: 10px;
+}
+
+.p-accordion .p-accordion-header:not(.p-disabled) .p-accordion-header-link:focus {
+    box-shadow: none;
+}
+
+.p-accordion .p-accordion-header .p-accordion-header-link .p-accordion-toggle-icon {
+
+    position: absolute;
+    right: 1%
+}
+
+.p-accordion .p-accordion-tab {
+    margin-bottom: 0px;
+}
+
+.datatable-rowgroup-demo .p-rowgroup-footer td {
+    font-weight: 700;
+}
+
+.datatable-rowgroup-demo .p-rowgroup-header span {
+    font-weight: 700;
+}
+
+.datatable-rowgroup-demo .p-rowgroup-header .p-row-toggler {
+    vertical-align: middle;
+    margin-right: .25rem;
+}
+
+.p-column-title {
+    font-size: 12px;
+}
+
+.tabbutton button {
+
+    font-size: 16px;
+    border: 0px;
+    border-radius: 0px;
+    margin: 10px;
+    background-color: #004b8e;
+}
+
+.tabbutton {
+    justify-content: end;
+    margin: 5px 0px 0px 0px;
+}
+
+.tabbutton button:enabled:hover {
+    background-color: #78a6cd;
+    border: 0px;
+}

@@ -111,3 +111,12 @@ h1 {
   text-align: center;
 
 }
+
+.hdg-label-popup {
+  display: none;
+  position: absolute
+}
+
+.icon:hover~.hdg-label-popup {
+  display: block
+}
