@@ -26,6 +26,8 @@ function DFMEABox1() {
                                     <p></p>
                                 </div>
                             </div>
+
+
                             <div className='grid m-0' >
                                 <div className="col-6 md:col-6 boxPara ">
                                     <p>Component</p>
